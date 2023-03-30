@@ -19,7 +19,7 @@ class Formatter {
       "by",
       "from",
     ];
-    const words = string.split(" ");
+    const words = string.toLowerCase().split(" ");
     let newWords = [];
 
     for (let i = 0; i < words.length; i++) {
@@ -35,5 +35,5 @@ class Formatter {
   }
 }
 
-let text = "my name is ken an dj";
-Formatter.titleize(text);
+let text = "MY NAME IS KEN AN DJ";
+console.log(Formatter.titleize(text));
